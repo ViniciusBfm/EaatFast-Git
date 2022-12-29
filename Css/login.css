@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../Images/comidalogo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+.entrarConta{
+    display: block;
+}
+.entrar{
+    width: 90%;
+    height: 50vh;
+    max-height: 380px;
+    min-height: 370px;
+    max-width: 430px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../Images/entrar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid #ea1d2bb2;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.62); 
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.62);
+    color: white;
+}
+.entrar input{
+    width: 100%;
+    height: 40px;
+    margin-top: 6px;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.entrar input[type=text],
+.entrar input[type=password]{
+    padding-left: 8px;
+    color: white;
+}
+.entrar input[type=submit]{
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ffffff99;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 750ms ease-in-out;
+}
+.entrar input[type=submit]:hover{
+    width: 100%;
+    background-color: #ea1d2c;
+    color: white;
+}
+.emailSenhaEntrar{
+    position: relative;
+    margin-bottom: 15px;
+}
+.entrar label{
+    font-size: 1rem;
+    font-weight: 700;
+    pointer-events: none;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    margin-bottom: 0px;
+    transition: all 350ms ease-out;
+    color: white;
+}
+.entrar input:focus{
+    border-bottom: 1px solid white;
+}
+.entrar input:focus ~ label, input:valid ~ label{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: white;
+}
+.entrar h1{
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+}
+.entrar h1::after{
+    content: '';
+    display: block;
+    width: 10%;
+    height: 5px;
+    background-color: #ea1d2c;
+    border-radius: 8px;
+}
+p{
+    font-size: clamp(14px, 1rem, 1.1rem);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.msg{
+    font-size: clamp(14px, 1rem, 1.1rem);
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}

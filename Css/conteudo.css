@@ -1,0 +1,1800 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-track{
+	background-color: #f7f7f7;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #ea1d2c;
+	border-radius: 5px;
+}
+header{
+    width: 100%;
+    max-width: 1400px;
+    height: 15vh;
+    max-height: 65px;
+    min-height: 60px;
+    padding: 4px 2%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftMenu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+.leftMenuMobile{
+    display: none;
+}
+.leftMenu img{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: clamp(14px, 0.9rem, 1rem);
+}
+.leftMenu input,
+.leftMenuMobile input{
+    outline: none;
+    height: 80%;
+    border-radius: 5px;
+    border: 0;
+    width: 45%;
+    padding-left: 10px;
+    font-size: clamp(14px, 0.9rem, 1rem);
+    background-color: #f7f7f7;
+}
+
+.rightMenu{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.infoEnderecoContainer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightMenu h3{
+    font-size: clamp(14px, 0.9rem, 1rem);
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+.infoEndereco{
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.infoNome{
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.rightMenu h1{
+    font-size: clamp(14px, 0.9rem, 1rem);
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+}
+.rightMenu img, #arrowInicio{
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 250ms;
+}
+.sair{
+    cursor: pointer;
+}
+.conteudo-container, footer{
+    width: 100%;
+    padding: 0 3%;
+    background: rgb(247,247,247);
+    background: -moz-linear-gradient(0deg, rgba(247,247,247,1) 26%, rgba(255,255,255,1) 26%);
+    background: -webkit-linear-gradient(0deg, rgba(247,247,247,1) 26%, rgba(255,255,255,1) 26%);
+    background: linear-gradient(0deg, rgba(247,247,247,1) 26%, rgba(255,255,255,1) 26%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7",endColorstr="#ffffff",GradientType=1);
+}
+.cupomContainer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #50a773;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.22); 
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.22);
+}
+.cupomContainer h1{
+    font-size: clamp(14px, 1rem, 1.2rem);
+    line-height: 60px;
+    font-weight: 600;
+}
+.cupomContainer img{
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+#cupomDisplay{
+    border-radius: 20px;
+    transition: all 250ms;
+    background-color: transparent;
+}
+#cupomDisplay:hover, .rightMenu img:hover, #arrowInicio:hover{
+    background-color: rgba(230, 230, 230, 0.438);
+    outline-offset: 0px;
+    outline: 5px solid rgba(230, 230, 230, 0.438);
+}
+.cupomOptions{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    z-index: 998;
+    position: absolute;
+    display: none;
+}
+.cupomOptionsContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    justify-content: space-evenly;
+}
+.cupomSingle{
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    height: 50%;
+    max-height: 300px;
+    min-height: 350px;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29); 
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(247,247,247);
+    background: -moz-linear-gradient(0deg, rgba(247,247,247,1) 21%, rgba(255,255,255,1) 21%);
+    background: -webkit-linear-gradient(0deg, rgba(247,247,247,1) 21%, rgba(255,255,255,1) 21%);
+    background: linear-gradient(0deg, rgba(247,247,247,1) 21%, rgba(255,255,255,1) 21%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7",endColorstr="#ffffff",GradientType=1);
+    transition: all 500ms ease-in-out;
+}
+.cupomSingle:hover{
+    transform: scale(1.1,1.1);
+}
+.cupomTitulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cupomTitulo img{
+    margin-right: 10px;
+}
+.cupomTitulo h6{
+    font-size: clamp(20px, 1rem, 1.2rem);
+}
+.cupomDescricao{
+    width: 100%;
+    color: gray;
+}
+.cupomInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(14px,14px,15px);
+}
+.cupomInfo p:nth-child(1){
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+.cupomInfo p:nth-child(2){
+    color: gray;
+}
+.cupomAviso{
+    text-align: center;
+    font-size: clamp(13px, 14px,15px);
+    font-weight: 600;
+    color: gray;
+}
+.conteudoContainer{
+    padding:2%;
+}
+.opcoes{
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    height: 30vh;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.opcoesMercado, .opcoesRestaurante,
+.opcoesFarmacia, .opcoesPet, .opcoesBebidas{
+    width: 18%;
+    max-width: 120px;
+    min-width: 80px;
+    height: 100%;
+    min-height: 100px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+    transition: all 750ms linear;
+    cursor: pointer;
+}
+.opcoesMercado:hover, .opcoesRestaurante:hover,
+.opcoesFarmacia:hover, .opcoesPet:hover, .opcoesBebidas:hover{
+    transform: scale(1.1,1.1);
+}
+.opcoesMercado img, .opcoesRestaurante img,
+.opcoesFarmacia img, .opcoesPet img, .opcoesBebidas img{
+    height: 70%;
+}
+.opcoes p{
+    width: 100%;
+    height: 30%;
+    margin-top: 3px;
+    text-align: center;
+    font-size: clamp(11px, 0.8rem,1rem);
+    font-weight: 500;
+    color: black;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.promocoesBanner{
+    width: 100%;
+    height: 50vh;
+    padding: 2% 2%;
+    background-color: gray;
+}
+.bannerSingle{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bannerSingle img{
+    width: 100%;
+    max-width: 750px;
+    height: 85%;
+    border: 20px solid #50a773;
+}
+.infoEnderecoCompleto, .infoNomeCompleto{
+    display: none;
+}
+.infoEnderecoCompleto{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -2%;
+    min-width: 10%;
+    max-width: 100%;
+    padding: 2%;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29); 
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29);
+    z-index: 999;
+    transition: all 750ms ease-in-out;
+}
+.infoNomeCompletoTodo{
+    display: none;
+    position: absolute;
+    top: 40px;
+    min-width: 5%;
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 2%;
+    font-weight: 500;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29); 
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29);
+    z-index: 999;
+    transition: all 750ms linear;
+}
+/*slider*/
+.slide{
+    padding: 0 2%;
+    width: 100%;
+    max-width: 800px;
+    margin:  auto;
+    display: grid;
+    
+}
+.slide-itens{
+    position: relative;
+    grid-area: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 7px 2px rgba(0,0,0,0.34); 
+    box-shadow: 2px 2px 7px 2px rgba(0,0,0,0.34);
+}
+.slide-nav{
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+.slide-nav button{
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    opacity: 0;
+}
+.slide img{
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    display: block;
+    border-radius: 5px;
+
+}
+.slide-itens > *{
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+.slide-itens > .active{
+    position: relative;
+    pointer-events: initial;
+    opacity: 1;
+}
+.slide-thumb{
+    display: flex;
+    grid-column: 1/3;
+
+}
+.slide-thumb > span{
+    flex: 1;
+    display: block;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.slide-thumb > span.active::after{
+    content: '';
+    display: block;
+    height: inherit;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    transform: translateX(-100%);
+    animation: thumb 5s forwards linear;
+    z-index: 888;
+}
+@keyframes thumb{
+    to{
+        transform: initial;
+    }
+}
+/*Promocoes*/
+.promocoesEntregaGratis{
+    margin: 2% 0;
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.promocoesEntregaGratis h1 , .cidades h1, .lojas h1, .famosos h1{
+    margin: 1.5% 0;
+    font-size: clamp(14px, 1.1rem,1.1rem);
+}
+.promocescontainer{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+.promocoesSingle{
+    padding: 1%;
+    width: 32%;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 350ms linear;
+    border: 1px solid #f7f7f7;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+.promocoesSingle:nth-child(2){
+    margin: 0 1.5%;
+}
+.promocoesSingle:hover{
+    transform: scale(1.1,1.1);
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.promocoesImg{
+    width: 100%;
+    height: 50%;
+}
+.promocoesImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+.promocoesInfoContent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promocoesTitulo h2{
+    text-align: center;
+    font-size: clamp(13px, 0.8rem, 0.9rem);
+    font-weight: 600;
+}
+.promocoesPreco{
+    width: 100%;
+    height: 20%;
+}
+.promocoesPreco h2{
+    font-size: clamp(13px, 0.5rem, 0.5rem);
+    text-decoration: line-through;
+    color: rgb(148, 147, 147);
+    font-weight: normal;
+}
+.promocoesPreco h3{
+    color: rgb(146, 146, 0);
+    font-weight: 600;
+    font-size: clamp(16px, 0.9rem, 0.9rem);
+}
+.promocoesAvaliacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promocoesAvaliacao span, .promocoesAvaliacao h4{
+    font-size: clamp(10px, 0.7rem, 0.75rem);
+}
+.promocoesStar{
+    display: flex;
+    align-items: center;
+}
+.promocoesStar img{
+    margin-right: 5px;
+}
+.lojasFiltrosContainer{
+    width: 100%;
+    height: 30vh;
+}
+.lojasFiltros{
+    padding: 2%;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.lojasFiltros span{
+    margin-right: 1%;
+    border: 1px solid rgb(175, 175, 175);
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-size: clamp(13px, 0.82rem, 0.82rem);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 650ms linear;
+}
+.lojasFiltros span:hover{
+    background-color: #f7f7f7;
+}
+.lojasFiltros img{
+    margin-left: 3px;
+}
+/*lojas*/
+.lojas{
+    width: 100%;
+    min-height: 50vh;
+}
+.lojascontainer{
+    margin: 2% auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lojasSingle{
+    margin: 1.5% 10px;
+    width: 23%;
+    max-width: 300px;
+    height: 18vh;
+    max-height: 110px;
+    min-height: 110px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #f0f0f0;
+    transition: all 250ms linear;
+    cursor: pointer;
+}
+.lojasSingle:hover{
+    transform: scale(1.05,1.05);
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+.lojasImg{
+    width: 40%;
+    height: 100%;
+}
+.lojasImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.lojasInfo{
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.lojasNome h1{
+    width: 100%;
+    font-size: clamp(14px, 1rem,1rem);
+}
+.lojasTipos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+}
+.lojasInfo h4{
+    font-size: clamp(13px, 0.6rem, 0.7rem);
+    font-weight: 500;
+}
+.lojasStar{
+    display: flex;
+    align-items: center;
+}
+.lojasStar img{
+    height: 13px;
+    margin-right: 7px;
+}
+.lojasPrecoTempo{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+/*Ver Mais*/
+.verMaisLojas{
+    margin: auto;
+    width: 97%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 250ms linear;
+}
+.verMaisLojas:hover{
+    background-color: #ea1d2c;
+    color: #ffffff;
+}
+.verMaisLojas p{
+    font-size: clamp(14px, 1rem, 1rem);
+    font-weight: 600;
+}
+/*footer*/
+.cidades{
+    width: 100%;
+    min-height: 20vh;
+    margin: 2% 0;
+}
+.cidadesContainer{
+    margin: 1% 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cidadesContent{
+    width: 25%;
+    height: 100%;
+}
+.cidadesContent p {
+    font-size: clamp(12px, 0.75rem,0.8rem);
+    padding: 7px 0;
+    cursor: pointer;
+    color: gray;
+}
+.cidadesContent p:hover{
+    color: #ea1d2c;
+    font-weight: 600;
+}
+/*direitos*/
+.direitos{
+    margin: 10px 0;
+    width: 100%;
+    height: 15vh;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.direitosImg{
+    width: 15%;
+    height: 100%;
+}
+.direitosImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.direitosInfo{
+    width: 48%;
+}
+.direitosInfo p{
+    font-size: clamp(9px, 0.8rem, 0.8rem);
+    color: gray;
+}
+.direitosTermos{
+    width: 44%;
+    font-size: clamp(9px, 0.8rem, 0.8rem);
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+    cursor: pointer;
+    text-align: center;
+}
+.direitosTermos p:hover{
+    color: #ea1d2c;
+    font-weight: 600;
+}
+/*Box dos filtros*/
+.filtrosBoxOrdenar, .valeRefeicao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: 999;
+    display: none;
+}
+.ordenarContainer, .valeRefeicaoContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 550px;
+    height: 50vh;
+    min-height: 320px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.closeBtn, .closeBtnVale, .closeBtnSelecionar, .carrinhoCloseBtn{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 50%;
+    background-color: #ea1d2c;
+    color: white;
+    cursor: pointer;
+}
+.closeBtn:hover, .closeBtnVale:hover, .closeBtnSelecionar:hover, .carrinhoCloseBtn:hover{
+    background-color: #cc1925;
+}
+.ordenarContainer h1, .valeRefeicaoContainer h1{
+    text-align: center;
+    font-size: clamp(12px, 0.9rem, 0.9rem);
+    padding: 10px 0;
+}
+.ordenarContent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ordenarBoxContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ordenarBox{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ordenarSingle{
+    position: relative;
+    padding: 30px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+.ordenarSingle:hover{
+    background-color: #e6e6e6;
+}
+.ordenarSingleImg{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.ordenarSingleImg img{
+    object-fit: contain;
+}
+.ordenarSingleText{
+    margin-top: 4px;
+    height: 50%;
+    text-align: center;
+}
+.ordenarSingleText p{
+    font-size: clamp(12px, 0.4rem, 0.5rem);
+}
+/*Vale refeicao*/
+.valeRefeicaoContainer h1{
+    height: 10%;
+}
+.valerefeicaoContent{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+.valerefeicaobox{
+    height: 13%;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 350ms linear;
+}
+.valerefeicaobox label{
+    cursor: pointer;
+    font-size: clamp(12px, 0.9rem, 1rem);
+    font-weight: 600;
+}
+.valerefeicaobox:hover{
+    background-color: #f7f7f7;
+}
+.valeRefeicaoContainer p:not(.closeBtnVale) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 15%;
+    background-color: #ea1d2c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 350ms linear;
+}
+.valeRefeicaoContainer p:not(.closeBtnVale):hover{
+    width: 95%;
+    background-color: #cc1925;
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
+/*Aparecer ou não na tela*/
+.listMenuMobileDisplay{
+    display: block;
+}
+.listMenuMobileDisplayNone{
+    display: none;
+}
+/*Catalogo*/
+.catalogo{
+    padding: 0 2%;
+    max-width: 1400px;
+    margin: auto;
+}
+.folder{
+    width: 100%;
+    height: 30vh;
+    min-height: 200px;
+    margin: 2% auto;
+    position: relative;
+}
+.folder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.folderBlack{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.647);
+    border-radius: 8px;
+}
+.folderInfo{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+}
+.folderInfoImg{
+    width: 30%;
+    max-width: 90px;
+    height: 30%;
+    max-width: 90px;
+    min-height: 80px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.folderInfoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.folderInfoText{
+    width: 70%;
+    padding-left: 5%;
+    text-align: left;
+    color: #ffffff;
+}
+.folderInfoText p{
+    font-weight: 600;
+}
+/*titulo do catalogo*/
+.NomeRestaurante{
+    width: 100%;
+    height: 11vh;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloRestaurante{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.imgRestaurante{
+    height: 100%;
+}
+.imgRestaurante img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.textRestaurante{
+    padding-left: 2%;
+}
+.textRestaurante h1{
+    font-size: clamp(15px, 1.4rem,1.5rem);
+}
+.textRestaurante p{
+    color: rgb(146, 146, 0);
+    font-weight: 600;
+}
+.infoRestaurante{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+}
+.infoRestaurante p{
+    font-size: clamp(13px, 0.7rem, 0.8rem);
+    color: gray;
+    font-style: italic;
+}
+.infoRestaurante p:nth-child(1){
+    margin: 0 15px;
+    color: #ea1d2c;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*buscar*/
+.buscar{
+    margin-top: 2%;
+    width: 100%;
+    height: 9vh;
+    min-height: 70px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.buscar input[type=search]{
+    width: 60%;
+    max-width: 900px;
+    height: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+.entregaTipo{
+    width: 20%;
+    margin: 0 2%;
+    height: 100%;
+    max-width: 180px;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.entregaTipo p, .entregaHora p, .entregaHora span{
+    font-size: clamp(11px, 0.8rem, 0.9rem);
+    font-weight: 500;
+}
+.entregaHora{
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+    max-width: 160px;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+}
+/*Comida*/
+.comida1, .comida2{
+    width: 100%;
+    min-height: 40vh;
+    margin-top: 2%;
+}
+.comida1Container, .comida2Container{
+    margin: 2% 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.comida1Single, .comida2Single{
+    margin: 10px 0;
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 25vh;
+    max-height: 200px;
+    min-height: 180px;
+    padding: 10px;
+    margin-left: calc(10%/4);
+    display: flex;
+    border: 1px solid #f7f7f7;
+    background-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 250ms liner;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+.comida1Single:hover, .comida2Single:hover{
+    transform: scale(1.02,1.02);
+}
+.comida1Text, .comida2Text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.comida1Text p:nth-child(1), .comida2Text p:nth-child(1){
+    font-weight: 600;
+    font-size: clamp(14px, 1rem, 1.1rem);
+}
+.comida1Text p:nth-child(2), .comida2Text p:nth-child(2){
+    width: 100%;
+    color: gray;
+    font-size: clamp(10px, 0.8rem, 0.85rem);
+    font-style: italic;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.comida1Text p:nth-child(3), .comida2Text p:nth-child(3){
+    color: rgb(146, 146, 0);
+    font-weight: 600;
+    font-size: clamp(14px, 1rem, 1.1rem);
+}
+.comida1Img, .comida2Img{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comida1Img img, .comida2Img img{
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+}
+/*Selecionar Compra*/
+.selecionarCompra, .carrinhoCompras{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.505);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.selecionarCompraContainer, .carrinhoComprasContainer{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 1000px;
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+}
+.selecionarCompraBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.selecionarCompraTitulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selecionarCompraTitulo h1{
+    font-size: clamp(15px, 1.2rem, 1.3rem);
+}
+.selecionarCompraImg{
+    width: 50%;
+    height: 80%;
+    max-height: 400px;
+}
+.selecionarCompraImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+.selecionarCompraText{
+    width: 48%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #dedede;
+    overflow-x: scroll;
+    max-height: 400px;
+}
+.selecionarCompraTextDescrisao{
+    width: 100%;
+    min-height: 5%;
+}
+.selecionarCompraTextDescrisao h3{
+    font-size: clamp(13px, 0.9rem, 0.9rem);
+    font-weight: 500;
+    text-align: justify;
+    color: gray;
+    font-style: italic;
+}
+.selecionarCompraTextPreco{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 10px;
+}
+.selecionarCompraTextPreco h3{
+    text-align: right;
+}
+.selecionarCompraTextEntrega{
+    width: 100%;
+    height: 12%;
+    background-color: #f7f7f7;
+    border: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selecionarCompraTextEntrega h3{
+    font-size: clamp(13px, 0.7rem, 0.8rem);
+    font-weight: 500;
+}
+.selecionarCompraTextModificar{
+    width: 100%;
+    height: 50%;
+    background-color: #f24f4f;
+    padding-top: 100%;
+}
+.selecionarCompraTextAdicionarContainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.selecionarCompraTextQuantidade{
+    width: 48%;
+    padding: 10px 20px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 600;
+}
+.selecionarQuantidadeMais, .selecionarQuantidadeMenos{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.selecionarQuantidade{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.selecionarQuantidadeMenos, .selecionarQuantidadeMais, .selecionarQuantidade{
+    padding: 5px 8px;
+    background-color: white;
+    transition: all 350ms linear;
+}
+.selecionarQuantidadeMais:hover, .selecionarQuantidadeMenos:hover{
+    background-color: #ea1d2c;
+    color: #ffffff;
+}
+.selecionarCompraTextAdicionar{
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.selecionarCompraTextAdicionar h3, .carrinhoComprasAvancar h3{
+    border: 1px solid #ea1d2c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ea1d2c;
+    cursor: pointer;
+    color: white;
+    font-size: clamp(14px, 1rem, 1.05rem);
+    transition: all 250ms linear;
+}
+.selecionarCompraTextAdicionar h3:hover, .carrinhoComprasAvancar h3:hover{
+    background-color: #cc1925;
+}
+/*carrinho de Compras */
+.carrinhoCompras{
+    display: none;
+}
+.carrinhoComprasTitulo{
+    width: 100%;
+    height: 10%;
+    padding: 10px 0;
+}
+.carrinhoComprasTitulo h3{
+    font-size: clamp(15px, 1.3rem, 1.4rem);
+    text-align: center;
+    padding: 5px 0;
+}
+.carrinhoComprasContent{
+    width: 100%;
+    height: 90%;
+    padding: 2%;
+}
+.carrinhoComprasInfo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.carrinhoComprasInfo div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.carrinhoComprasInfo img{
+    height: 100%;
+    margin-right: 10px;
+}
+.carrinhoComprasInfo h3{
+    font-size: clamp(15px, 1.2rem, 1.3rem);
+}
+.carrinhoComprasLogo{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.carrinhoComprasNome{
+    width: auto;
+    height: 100%;
+}
+.carrinhoComprasBox{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    padding: 10px ;
+    border: 1px solid #dedede;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+.carrinhoComprasComidas{
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ea1d2c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carrinhoComprasSingle{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.carrinhoComprasSingle .carrinhoComprasSingleBox{
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid #ea1d2c;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.carrinhoComprasSingleBox h3{
+    width: auto;
+    font-size: clamp(14px, 1rem,1.1rem);
+    font-style: italic;
+}
+.carrinhoComprasSingleBoxPedido img:nth-child(1){
+    height: 100%;
+    border-radius: 8px;
+}
+.carrinhoComprasModificacoes{
+    width: 100%;
+}
+.carrinhoComprasSingleBoxPedido{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.carrinhoComprasSingleBoxPedido img:nth-child(2){
+    margin-left: 10px;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+.carrinhoComprasSingleBoxPedido img:nth-child(2):hover{
+    background-color: #dedede;
+}
+.sacoladeCompras{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    max-width: 67px;
+    max-height: 67px;
+    border-radius: 50%;
+    background-color:#ea1d2c;
+    border: 1px solid #cc1925;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+.sacoladeCompras img{
+    width: 100%;
+    height: 100%;
+}
+.sacoladeCompras:hover{
+    background-color: #cc1925;
+}
+.carrinhoComprasSingleVazio h3{
+    font-style: italic;
+    color: gray;
+    font-weight: 500;
+}
+.carrinhoComprasAvancar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.carrinhoComprasAvancar h3{
+    border: 1px solid #ea1d2c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ea1d2c;
+    cursor: pointer;
+    color: white;
+    font-size: clamp(14px, 1rem, 1.05rem);
+    transition: all 250ms linear;
+}
+/*footer catalogo*/
+.catalogoFooter{
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #dedede;
+}
+
+@media screen and (max-width: 1400px){
+    .leftMenu{
+        display: none;
+    }
+    .leftMenuMobile{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+    }
+    .leftMenuMobile img{
+        height: 100%;
+        max-height: 60px;
+    }
+    .listMenuMobile{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 20%;
+        width: 40%;
+        max-width: 300px;
+        min-width: 280px;
+        background-color: white;
+        padding: 2% 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29); 
+        box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.29);
+        z-index: 999;
+        transition: all 750ms ease-in-out;
+    }
+    #btnInicio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+    
+    .listMenuMobile li{
+        width: 100%;
+        padding: 4px 2%;
+    }
+    .listMenuMobile a{
+        font-size: clamp(14px, 0.9rem, 1rem);
+        color: black;
+    }
+    .listMenuMobile li:hover{
+        background-color: #f7f7f7;
+        color: white;
+    }
+    .listMenuMobile a{
+        color: black;
+        display: block;
+    }
+    .listMenuMobile a:hover{
+        color: #ea1d2c;
+    }   
+    .leftMenuMobile input{
+        width: 60%;
+        height: 80%;
+    }
+    .listMenuMobileDisplay{
+        display: block;
+    }
+    .listMenuMobileDisplayNone{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .lojasSingle{
+        width: 33.3%;
+    }
+}
+@media screen and (max-width: 980px){
+    .lojasSingle{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 821px){
+    .direitos{
+        flex-wrap: wrap;
+    }
+    .direitosInfo{
+        width: 85%;
+        max-width: 500px;
+    }
+    .direitosInfo p{
+        font-size: 12px;
+    }
+    .direitosTermos{
+        width: 100%;
+        padding: 5px 0;
+    }
+    .direitosTermos p {
+        font-size: 12px;
+    }
+    /*selecionar comida*/
+    .selecionarCompraContainer{
+        height: 85vh;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .selecionarCompraTitulo{
+        height: auto;
+        padding: 10px 0;
+    }
+    .selecionarCompraImg{
+        width: 100%;
+        height: 30%;
+        padding: 10px 0;
+    }
+    .selecionarCompraText{
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .selecionarCompraTextPreco{
+        height: auto;
+    }
+    .selecionarCompraTextEntrega{
+        height: auto;
+        padding: 10px 0;
+    }
+    .selecionarCompraTextModificar{
+        padding-top: 100%;
+    }
+    .selecionarCompraTextAdicionar{
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 728px){
+    .buscar input[type=search]{
+        width: 50%;
+    }
+    .entregaTipo, .entregaHora{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 680px){
+    .info{
+        display: none;
+    }
+    .infoEnderecoContainer{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    header{
+        height: 15vh;
+        max-height: 120px;
+        min-height: 100px;
+        flex-direction: column;
+    }
+    .listMenuMobile{
+        top: 100px;
+    }
+    .leftMenuMobile{
+        width: 100%;
+        height: 60%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .rightMenu{
+        width: 100%;
+        height: 40%;
+        justify-content: space-between;
+    }
+    .listMenuMobile{
+        top: 60px;
+    }
+    .infoEnderecoContainer{
+        justify-content: left;
+    }
+    .cupomSingle:hover{
+        transform: scale(1.0,1.0);
+    }
+    .infoEnderecoCompleto{
+        top: 32px;
+    }
+    .promocoesSingle:hover{
+        transform: scale(1,1);
+        background-color: #f7f7f7;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    .lojasSingle{
+        margin: 1.5% 10px;
+        width: 100%;
+        max-width: none;
+    }
+    .lojasImg img{
+        object-fit: contain;
+    }
+    .cidadesContent{
+        width: 50%;
+    }
+    .folder{
+        height: 15vh;
+    }
+    .NomeRestaurante{
+        flex-direction: column;
+        max-height: 70px;
+
+    }
+    .tituloRestaurante{
+        width: 100%;
+        height: 80%;
+    }
+    .infoRestaurante{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 665px){
+    .buscar{
+        flex-wrap: wrap;
+        min-height: 130px;
+    }
+    .buscar input[type=search]{
+        width: 100%;
+        height: 50%;
+    }
+    .entregaTipo, .entregaHora{
+        width: 48%;
+        height: 50%;
+        margin: 2% 0;
+        max-width: none;
+    }
+    .comida1Container, .comida2Container{
+        justify-content: center;
+    }
+    .comida1Single, .comida2Single{
+        width: 100%;
+        max-width: none;
+    }
+    
+
+}
+@media screen and (max-width: 480px){
+    .listMenuMobile{
+        top: 60px;
+        left: 0%;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    /*Header*/
+    header{
+        max-height: 150px;
+    }
+    .listMenuMobile{
+        top: 100px;
+    }
+    .leftMenuMobile{
+        height: 40%;
+    }
+    .rightMenu{
+        height: 30%;
+    }
+    .leftMenuMobile input{
+        width: 100%;
+        height: 70%;
+    }
+    .cupomContainer h1{
+        font-size: clamp(14px, 0.9rem, 1rem);
+        line-height: 20px;
+    }
+    .conteudoContainer{
+        padding:2%;
+        height: 25vh;
+        margin: 10px 0;
+    }
+    .opcoes{
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .opcoesMercado, .opcoesRestaurante,
+    .opcoesFarmacia, .opcoesPet, .opcoesBebidas{
+        width: 100%;
+        max-width: none;
+        min-width: none;
+        height: 18%;
+        padding: 2px;
+        min-height: 18%;
+        flex-direction: row;
+        margin: 0px 0;
+    }
+    .opcoesMercado:hover, .opcoesRestaurante:hover,
+    .opcoesFarmacia:hover, .opcoesPet:hover, .opcoesBebidas:hover{
+    transform: scale(1.0,1.0);
+}
+    .opcoesMercado img, .opcoesRestaurante img,
+    .opcoesFarmacia img, .opcoesPet img, .opcoesBebidas img{
+        height: 100%;
+        width: 50%;
+        object-fit: contain;
+    }
+    .opcoes p{
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        font-size: clamp(14px, 1rem,1rem);
+    }
+    /*Promocoes*/
+    .promocoesEntregaGratis{
+        margin: 20px 0;
+        width: 100%;
+        height: 45vh;
+        min-height: 300px;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .promocoesEntregaGratis h1 , .cidades h1, .lojas h1, .famosos h1{
+        height: auto;
+        margin: 0;
+        font-size: clamp(14px, 1.1rem,1.1rem);
+    }
+    .promocescontainer{
+        width: 100%;
+        max-width: none;
+        margin: auto;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    .promocoesSingle{
+        padding: 6px;
+        width: 100%;
+        max-width: none;
+        height: 30%;
+        flex-direction: row;
+    }
+    .promocoesSingle:nth-child(2){
+        margin: 0;
+    }
+    .promocoesSingle:hover{
+        transform: scale(1.0,1.0);
+    }
+    .promocoesImg{
+        width: 48%;
+        height: 100%;
+    }
+    .promocoesImg img{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+    .promocoesInfoContent{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .promocoesPreco{
+        height: auto;
+    }
+    /*Ver Mais*/
+    .verMaisLojas{
+        margin: 20px auto;
+    }
+    /*Box dos filtros*/
+    .ordenarBoxContainer{
+        padding: 2%;
+    }
+    /*Vale refeicao*/
+    .valerefeicaoContent{
+        padding: 2%;
+    }
+    /*Aparecer ou não na tela*/
+    .listMenuMobileDisplay{
+        display: block;
+    }
+    .listMenuMobileDisplayNone{
+        display: none;
+    }
+    
+}

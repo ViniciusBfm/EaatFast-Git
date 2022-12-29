@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seu Melhor Delivery de Comida - EatFast</title>
+    <link rel="stylesheet" href="../Css/conteudo.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>   
+    <link rel="shortcut icon" type="image-x/png" href="../icone.ico">
+  </head>
+  <body>
+    <header>
+      <div class="leftMenu">
+        <img src="../Images/logo.png" alt="">
+        <li><a href="">Inicio</a></li>
+        <li><a href="#lojas">Restaurante</a></li>
+        <li><a href="#lojas">Mercados</a></li>
+        <li><a href="#lojas">Bebidas</a></li>
+        <li><a href="#lojas">Farmácias</a></li>
+        <li><a href="#lojas">Pets</a></li>
+        <input type="search" name="" id="pesquisa" placeholder="Busque por item ou loja">
+      </div>
+      <div class="leftMenuMobile">
+        <img src="../Images/logo.png" alt="">
+        <li><a id="btnInicio" style="font-size: clamp(14px, 0.9rem, 1rem);" href="#">Inicio <img id="arrowInicio" src="../Images/arrowbottom2.png" alt=""></a></li>
+        <div class="listMenuMobile">
+          <li><a href="conteudo.html">Inicio</a></li>
+          <li><a href="#lojas">Restaurante</a></li>
+          <li><a href="#lojas">Mercados</a></li>
+          <li><a href="#lojas">Bebidas</a></li>
+          <li><a href="#lojas">Farmácias</a></li>
+          <li><a href="#lojas">Pets</a></li>
+        </div>
+        <input type="search" name="" id="pesquisa" placeholder="Busque por item ou loja">
+      </div>
+      <div class="rightMenu">
+        <div class="infoEnderecoContainer">
+          <h3 class="infoEndereco"></h3><img id="arrowender" src="../Images/arrowbottom2.png" alt="">
+          <div class="infoEnderecoCompleto"></div>
+        </div>
+        
+        <div class="info">
+          <h1 class="infoNome"></h1><img id="arrownome" src="../Images/arrowbottom2.png" alt="">
+          <h4 class="infoNomeCompleto"></h4>
+          <div class="infoNomeCompletoTodo"></div>
+        </div>
+        <img class="sair" onclick="sair()"src="../Images/sair.png" alt="">
+      </div>
+    </header>
+
+    <section class="cupomContainer">
+      <img src="../Images/cupom.png" alt=""><h1> Você tem 6 cupons! Aproveite seus descontos</h1><img id="cupomDisplay" src="../Images/arrowbottom1.png" alt="">
+    </section>
+
+    <section class="cupomOptions">
+      <div class="cupomOptionsContainer">
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+        <div class="cupomSingle">
+          <div class="cupomTitulo">
+            <img src="../Images/cupom1.png" alt="">
+            <h6>R$18 para a sua primeira compra</h6>
+          </div>
+          <div class="cupomDescricao">
+            <p>Em pedidos a partir de R$28 ganhe voucher de R$18</p>
+          </div>
+          <div class="cupomInfo">
+            <p>Ver Regras</p>
+            <p>Valido até 30/11</p>
+          </div>
+          <div class="cupomAviso">
+            <p>O cupom será aplicado no pagamento</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="conteudo-container">
+      
+      <section class="conteudoContainer">
+          <div class="opcoes">
+            <div class="opcoesRestaurante">
+              <img src="../Images/hamburguer.png" alt="">
+              <p>Restaurantes</p>
+            </div>
+            <div class="opcoesMercado">
+              <img src="../Images/mercado.png" alt="">
+              <p>Mercados</p>
+            </div>
+            <div class="opcoesFarmacia">
+              <img src="../Images/remedio.png" alt="">
+              <p>Farmacias</p>
+            </div>
+            <div class="opcoesPet">
+              <img src="../Images/pets.png" alt="">
+              <p>Pets</p>
+            </div>
+            <div class="opcoesBebidas">
+              <img src="../Images/bebidas.png" alt="">
+              <p>Bebidas</p>
+            </div>
+          </div>
+  
+  
+      </section>
+  
+      <section data-slide="slide"  class="slide">
+        <div class="slide-itens">
+          <img src="../Images/banner1.png" alt="">
+          <img src="../Images/banner2.png" alt="">
+          <img src="../Images/banner3.png" alt="">
+        </div>
+        <nav class="slide-nav">
+          <div class="slide-thumb"></div>
+          <button class="slide-prev">Anterior</button>
+          <button class="slide-next">Proximo</button>
+        </nav>
+      </section>
+      
+      <section class="promocoesEntregaGratis">
+        <h1>Promocões com entrega grátis</h1>
+        <div class="promocescontainer">
+          <div class="promocoesSingle">
+            <div class="promocoesImg">
+              <img src="../Images/comid1.jpg" alt="">
+            </div>
+            <div class="promocoesInfoContent">
+              <div class="promocoesTitulo">
+                <h2>Prato executivo para 1 pessoa</h2>
+              </div>
+              <div class="promocoesPreco">
+                <h2>R$ 25,00</h2>
+                <h3>R$ 15,90</h3>
+              </div>
+              <div class="promocoesAvaliacao">
+                <div class="promocoesStar">
+                  <img src="../Images/star.png" alt="">
+                  <span>4.5</span>
+                </div>
+                <h4>35 - 45 min</h4>
+                <span style="color:rgb(146, 146, 0);">Gratis</span>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="promocoesSingle">
+            <div class="promocoesImg">
+              <img src="../Images/comid2.jpg" alt="">
+            </div>
+            <div class="promocoesInfoContent">
+              <div class="promocoesTitulo">
+                <h2>Hamburguer artesanal com batata frita</h2>
+              </div>
+              <div class="promocoesPreco">
+                <h2>R$ 36,00</h2>
+                <h3>R$ 27,90</h3>
+              </div>
+              <div class="promocoesAvaliacao">
+                <div class="promocoesStar">
+                  <img src="../Images/star.png" alt="">
+                  <span>4.5</span>
+                </div>
+                <h4>35 - 45 min</h4>
+                <span style="color:rgb(146, 146, 0);">Gratis</span>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="promocoesSingle">
+            <div class="promocoesImg">
+              <img src="../Images/comid3.jpg" alt="">
+            </div>
+            <div class="promocoesInfoContent">
+              <div class="promocoesTitulo">
+                <h2>Pastel com sabores variados</h2>
+              </div>
+              <div class="promocoesPreco">
+                <h2>R$ 16,00</h2>
+                <h3>R$ 12,50</h3>
+              </div>
+              <div class="promocoesAvaliacao">
+                <div class="promocoesStar">
+                  <img src="../Images/star.png" alt="">
+                  <span>4.9</span>
+                </div>
+                <h4>35 - 45 min</h4>
+                <span style="color:rgb(146, 146, 0);">Gratis</span>
+              </div>
+            </div>
+        
+          </div>
+
+        </div>
+      </section>
+
+      <section class="lojasFiltosContainer">
+        <div class="lojasFiltros">
+          <span>Para retirar</span>  
+          <span>Entrega Parceira</span> 
+          <span id="ordenar">Ordenar <img src="../Images/arrowbottom2.png" alt=""></span>       
+          <span>Entrega Grátis</span>
+          <span id="valerefeicao">Vale Refeição <img src="../Images/arrowbottom2.png" alt=""></span>
+          <span>Filtos <img src="../Images/arrowbottom2.png" alt=""></span>
+        </div>
+      </section>
+
+      <section id="lojas" class="lojas">
+        <h1>Lojas</h1>
+        <div class="lojascontainer">
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest1.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Fabrica de Sabores</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>4.5</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>5,1Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 45 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest2.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Maxumus</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>6,8Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>20 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest3.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Unosso</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Bar</h4>
+                <h4>7Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+         
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest1.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Fabrica de Sabores</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>4.5</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>5,1Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 45 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest2.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Maxumus</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>6,8Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>20 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest3.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Unosso</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Bar</h4>
+                <h4>7Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest1.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Fabrica de Sabores</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>4.5</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>5,1Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 45 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest2.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Maxumus</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>6,8Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>20 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest3.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Unosso</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Bar</h4>
+                <h4>7Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest1.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Fabrica de Sabores</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>4.5</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>5,1Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 45 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest2.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Maxumus</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Restaurante</h4>
+                <h4>6,8Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>20 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="lojasSingle">
+            <div class="lojasImg">
+              <img src="../Images/rest3.jpg" alt="">
+            </div>
+            <div class="lojasInfo">
+              <div class="lojasNome"><h1>Unosso</h1></div>
+              <div class="lojasTipos">
+                <div class="lojasStar">
+                  <img src="../Images/star.png" alt="">
+                  <h4>3.8</h4>
+                </div>
+                <h4>Bar</h4>
+                <h4>7Km</h4>
+              </div>
+              <div class="lojasPrecoTempo">
+                <h4>35 - 55 min</h4>
+                <h4 style="color:rgb(146, 146, 0);">Gratis</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="verMaisLojas">
+        <p>Ver Mais</p>
+      </div>
+
+    </section>
+
+    <section class="filtrosBoxOrdenar">
+      <div class="ordenarContainer">
+        <p class="closeBtn">x</p>
+        <h1>Ordenar Por</h1>
+        <div class="ordenarContent">
+          <div class="ordenarBoxContainer">
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/up-down.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Ordenação Padrão</p>
+              </div>
+            </div>
+
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/preco.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Preço</p>
+              </div>
+            </div>
+
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/star2.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Avaliação</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="ordenarContent">
+          <div class="ordenarBoxContainer">
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/time.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Tempo de Entrega</p>
+              </div>
+            </div>
+
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/entrega.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Taxa de Entrega</p>
+              </div>
+            </div>
+
+            <div class="ordenarBox">
+              <div class="ordenarSingle">
+                <div class="ordenarSingleImg">
+                  <img src="../Images/localizacao.png" alt="">
+                </div>
+              </div>
+              <div class="ordenarSingleText">
+                <p>Menor Distância</p>
+              </div>
+            </div>
+        </div>  
+    </section>
+
+    <div class="valeRefeicao">
+      <div class="valeRefeicaoContainer">
+        <p class="closeBtnVale">x</p>
+        <h1>Vale-refeição/Alimentação</h1>
+        <div class="valerefeicaoContent">
+          <div class="valerefeicaobox">
+            <label for="vrRefeicao">Vr Refeição</label>
+            <input type="checkbox" name="" id="vrRefeicao">
+          </div>
+          <div class="valerefeicaobox">
+            <label for="sodexorefeicao">Sodexo Refeição</label>
+            <input type="checkbox" name="" id="sodexorefeicao">
+          </div>
+          <div class="valerefeicaobox">
+            <label for="alelorefeicao">Alelo Refeição</label>
+            <input type="checkbox" name="" id="alelorefeicao">
+          </div>
+          <div class="valerefeicaobox">
+            <label for="ticketrestaurante">Ticket Restaurante</label>
+            <input type="checkbox" name="" id="ticketrestaurante">
+          </div>
+          <div class="valerefeicaobox">
+            <label for="benrefeicao">Ben Refeição</label>
+            <input type="checkbox" name="" id="benrefeicao">
+          </div>
+          <p>Ver Resultados</p>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="cidades">
+        <h1>Explore por cidades</h1>
+
+        <div class="cidadesContainer">
+          <div class="cidadesContent">
+            <p>Alagoinhas</p>
+            <p>Belo Horizonte</p>
+            <p>Brasilia</p>
+            <p>Campinas</p>
+            <p>Catu</p>
+          </div>
+          <div class="cidadesContent">
+            <p>Curitiba</p>
+            <p>Goiânia</p>
+            <p>Guarulhos</p>
+            <p>João Pessoa</p>
+            <p>Natal</p>
+          </div>
+          <div class="cidadesContent">
+            <p>Niterói</p>
+            <p>Porto Alegre</p>
+            <p>Ribeirão Preto</p>
+            <p>Rio de Janeiro</p>
+            <p>Salvador</p>
+          </div>
+          <div class="cidadesContent">
+            <p>Santo André</p>
+            <p>Santos</p>
+            <p>São Bernardo do Campo</p>
+            <p>São Caetano do Sul</p>
+            <p>São Paulo</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="direitos">
+        <div class="direitosImg">
+          <img src="../Images/logo.png" alt="">
+        </div>
+        <div class="direitosInfo">
+          <p>© Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online S.A.</p>
+          <p>CNPJ 00.000.000/0008-00 / Avenida General Severino Filho - CEP 154785-874</p>
+        </div>
+        <div class="direitosTermos">
+          <p>Termos e condições de uso</p>
+          <p>Código de conduta</p>
+          <p>Privacidade</p>
+          <p>Dicas de segurança</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+  <script src="../Js/conteudo.js"></script>
+</html>

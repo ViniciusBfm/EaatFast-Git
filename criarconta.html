@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Criar Conta - EatFast</title>
+    <link href="../Css/criarconta.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>   
+    <link rel="shortcut icon" type="image-x/png" href="../icone.ico">
+  </head>
+  <body>
+   
+    <section class="backCriarConta">
+        <div class="criarConta">
+
+            <div class="criar">
+                <h1>Cadastre-se</h1>
+                <div class="fechar"><p>Fechar</p></div>
+            </div>
+            <div class="msg" id="msg"></div>
+
+            <form class="contaNova">
+
+                <div class="Container100vw">
+                    <input required autocomplete="off" type="text" name="" id="nome">
+                    <label id="labelnome" for="nome">Nome Completo</label>
+                </div>
+
+                <div class="Container50vw">
+                    <div class="meio">
+                        <input required  autocomplete="off" type="text" name="" id="usuario">
+                        <label id="labelusuario" for="usuario">Usuário</label>
+                    </div>
+                    <div class="meio">
+                    <input required  autocomplete="off" type="tel" name="" id="celular">
+                    <label id="labelcelular" for="celular">Celular</label>
+                    </div>               
+                </div>
+
+                <div class="Container100vw">
+                    <input required autocomplete="off" type="text" name="" id="ender">
+                    <label id="labelender" for="ender">Endereço</label>
+                </div>
+                <div class="Container50vw">
+                    <div class="meio">
+                        <input required type="password" name="" id="senha1">
+                        <label id="labelsenha" for="senha1">Senha</label>
+                    </div>
+                    <div class="meio">
+                        <input required type="password" name="" id="senha2">
+                        <label id="labelconfirmesenha" for="senha2">Confirmar Senha</label>
+                    </div>
+                </div>
+                <input id="criarConta" type="submit" value="Criar Conta">
+            </form>
+        </div>
+    </section>
+  </body>
+  <script src="../Js/criarconta.js"></script>
+</html>

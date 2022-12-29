@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../Images/comidalogo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.backCriarConta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.criar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fechar{
+    background-color: #ea1d2c;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #ea1d2c;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.1); 
+    box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.1);
+}
+.criarConta{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 100%;
+    height: 65vh;
+    max-height: 600px;
+    min-height: 500px;
+    max-width: 550px;
+    min-width: 300px;
+    padding: 2%;
+    z-index: 999;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.4);
+    border: 1px solid #ea1d2c;
+    background-color: #ffffffc8;
+}
+.criarConta h1{
+    font-size: clamp(1rem, 1.9rem, 2rem);
+    color: #ea1d2c;
+    font-weight: 600;
+}
+.criarConta h1::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: red;
+    border-radius: 10px;
+}
+.msg{
+    padding: 10px 0;
+    font-weight: 600;
+    display: none;
+    font-style: italic;
+}
+.criarConta label{
+    font-size: clamp(15px, 1rem, 1.2rem);
+    font-weight: 600;
+}
+.contaNova{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Container50vw{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meio{
+    width: 50%;
+    position: relative;
+}
+.meio label,
+.Container100vw label{
+    width: 100%;
+    font-size: clamp(14px, 1rem, 1.1rem);
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+    margin-top: 15px;
+    transition: all 350ms ease-out;
+}
+.meio input[type=text],
+.meio input[type=tel],
+.meio input[type=password]{
+    width: 100%;
+    height: 40px;
+
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid #ea1d2c;
+    font-size: 1.1rem;
+    background-color: transparent;
+    outline: none;
+    background-color: transparent;
+}
+.meio input[type=text], #senha1{
+    width: 90%;
+}
+.meio input:focus{
+    border-bottom: 1px solid #ff1f2e;
+}
+.meio input:focus ~ label, input:valid ~ label{
+    font-size: 14px;
+    margin-top: -13px;
+    color: #ea1d2c;
+}
+.Container100vw{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Container100vw input:focus ~ label, input:valid ~ label{
+    font-size: 14px;
+    margin-top: -13px;
+    color: #ea1d2c;
+}
+.Container100vw input[type=text]{
+    border: 0;
+    border-bottom: 1px solid #ea1d2c;
+    height: 40px;
+    padding-left: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+}
+input[type=submit]{
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    -webkit-box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.1); 
+    box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ffffffd0;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 850ms ease-out;
+}
+input[type=submit]:hover{
+    width: 100%;
+    background-color: #ea1d2c;
+    color: white;
+}
+.inputOk{
+    width: 100%;
+    background-color: #ea1d2c;
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .criarConta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 98%;
+        height: 80vh;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 556px){
+    .criarConta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 95%;
+        height: 90vh;
+        padding: 20px 2%;
+    }
+    .contaNova{
+        padding: 0 2%;
+    }
+}

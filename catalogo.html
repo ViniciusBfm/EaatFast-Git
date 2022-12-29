@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seu Melhor Delivery de Comida - EatFast</title>
+    <link rel="stylesheet" href="../Css/conteudo.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>   
+    <link rel="shortcut icon" type="image-x/png" href="../icone.ico">
+  </head>
+  <body>
+    <header>
+      <div class="leftMenu">
+        <img src="../Images/logo.png" alt="">
+        <li><a  href="conteudo.html">Inicio</a></li>
+        <li><a href=#lojas">Restaurante</a></li>
+        <li><a href="#lojas">Mercados</a></li>
+        <li><a href="#lojas">Bebidas</a></li>
+        <li><a href="#lojas">Farmácias</a></li>
+        <li><a href="#lojas">Pets</a></li>
+        <input type="search" name="" id="pesquisa" placeholder="Busque por item ou loja">
+      </div>
+      <div class="leftMenuMobile">
+        <img src="../Images/logo.png" alt="">
+        <li><a id="btnInicio" style="font-size: clamp(14px, 0.9rem, 1rem);" href="#">Inicio <img id="arrowInicio" src="../Images/arrowbottom2.png" alt=""></a></li>
+        <div class="listMenuMobile">
+          <li><a href="conteudo.html">Inicio</a></li>
+          <li><a href="#lojas">Restaurante</a></li>
+          <li><a href="#lojas">Mercados</a></li>
+          <li><a href="#lojas">Bebidas</a></li>
+          <li><a href="#lojas">Farmácias</a></li>
+          <li><a href="#lojas">Pets</a></li>
+        </div>
+        <input type="search" name="" id="pesquisa" placeholder="Busque por item ou loja">
+      </div>
+      <div class="rightMenu">
+        <div class="infoEnderecoContainer">
+          <h3 class="infoEndereco"></h3><img id="arrowender" src="../Images/arrowbottom2.png" alt="">
+          <div class="infoEnderecoCompleto"></div>
+        </div>
+        
+        <div class="info">
+          <h1 class="infoNome"></h1><img id="arrownome" src="../Images/arrowbottom2.png" alt="">
+          <h4 class="infoNomeCompleto"></h4>
+          <div class="infoNomeCompletoTodo"></div>
+        </div>
+        <img class="sair" onclick="sair()"src="../Images/sair.png" alt="">
+      </div>
+    </header>
+
+    <section class="catalogo">
+
+      <section class="folder">
+        <img src="../Images/comidafolder.jpg" alt="">
+        <div class="folderBlack"></div>
+        <div class="folderInfo">
+          <div class="folderInfoImg">
+            <img src="../Images/store.png" alt="">
+          </div>
+          <div class="folderInfoText">
+            <h1>Loja Fechada</h1>
+            <p>Abre às 16:30h</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="NomeRestaurante">
+        <div class="tituloRestaurante">
+          <div class="imgRestaurante">
+            <img src="../Images/rest1.jpg" alt="">
+          </div>
+          <div class="textRestaurante">
+            <h1>Fábrica de Sabores</h1>
+            <p>Novidade no Ieeat</p>
+          </div>
+        </div>
+
+        <div class="infoRestaurante">
+          <p>Ver mais</p>
+          <p>Pedido minimo R$25,00</p>
+        </div>
+      </section>
+
+      <section class="buscar">
+        <input type="search" name="buscar" id="" placeholder="Buscar no Cardapio">
+        <div class="entregaTipo">
+          <img src="../Images/entrega.png" alt="">
+          <p>Entrega</p>
+          <img style="cursor: pointer;" src="../Images/arrowbottom2.png" alt="">
+        </div>
+        <div class="entregaHora">
+          <p>Hoje</p>
+          <span>50 - 60 min</span>
+          <span>R$ 14,99</span>
+        </div>
+      </section>
+
+      <section class="comida1">
+        <h1>Hamburguer</h1>
+        <div class="comida1Container">
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>Hamburguer com Batata</p>
+              <p>Tradicional</p>
+              <p>R$16.00</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida1.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>Glub Brown</p>
+              <p>Pão brioche tostodo na manteiga , Blend bovino 160g , Queijo mussarela , Tomate , Alface americana ,Cebola roxa , Maionese artesanal da casa , molho rosê!</p>
+              <p>R$29.00</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida2.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>Leve 2 Tref Bacon</p>
+              <p>Pão Batata tostado , Blend Bovino 160g , Queijo mussarela , Fondue de cheddar cremoso , Muuuito Bacon , Molho secreto , Maionese Gourmet de Limão</p>
+              <p>R$37.00</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida3.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>Smash Duplo Bacon</p>
+              <p>Leve O Incrivel Smash duplo Bacon:pão tostadinho na manteiga , duplo blend 100g , duplo queijo mussarela , 2 camadas de bacon , e nossa incrivel maionese artesanal de limão!</p>
+              <p>R$46.00</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida4.png" alt="Hamburguer">
+            </div>
+          </div>
+
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>Premium Triplo</p>
+              <p>Pão Brioche tostado na manteiga super macio ,Triplo blend 160g, 3 queijos , Fondue de Cheddar , Duplo Bacon em fatia , Molho especial !</p>
+              <p>R$59.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida5.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida1Single">
+            <div class="comida1Text">
+              <p>3 Classicos (Família)</p>
+              <p>Pão batata tostado , Blend bovino 150g , Queijo mussarela , molho especial , maionese Gourmet , alface americana , tomate , cebola roxa !</p>
+              <p>R$35.50</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/comida6.png" alt="">
+            </div>
+          </div>
+ 
+        </div>
+      </section>
+    
+      <section class="comida2">
+        <h1>Bebidas</h1>
+        <div class="comida2Container">
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>Guaraná em Lata </p>
+              <p>350ml</p>
+              <p>R$3.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebidas1.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>Coca-cola 1L</p>
+              <p>Garrafa 1L</p>
+              <p>R$8.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebidas2.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>Del Valle Laranja</p>
+              <p>450ml</p>
+              <p>R$5.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebida3.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>Dell Valle Uva</p>
+              <p>450ml</p>
+              <p>R$5.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebida4.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>Guaraná Antartica 1L</p>
+              <p>Garrafa 1L</p>
+              <p>R$8.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebida5.png" alt="">
+            </div>
+          </div>
+
+          <div class="comida2Single">
+            <div class="comida2Text">
+              <p>H2O</p>
+              <p>500ml</p>
+              <p>R$5.99</p>
+            </div>
+            <div class="comida1Img">
+              <img src="../Images/bebidas3.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+
+    <section class="selecionarCompra">  
+      <div class="selecionarCompraContainer">
+        <div class="closeBtnSelecionar">x</div>
+        <div class="selecionarCompraBox">
+          <div class="selecionarCompraTitulo"><h1></h1></div>
+          <div class="selecionarCompraImg"></div>
+          <div class="selecionarCompraText">
+            <div class="selecionarCompraTextDescrisao"></div>
+            <div class="selecionarCompraTextPreco"></div>
+            <div class="selecionarCompraTextEntrega"><h3>Hoje</h3><h3>50 - 60 min R$14,99</h3></div>
+            <div class="selecionarCompraTextModificar">
+              <div class="modificarcontainer">
+                
+              </div>
+            </div>
+          </div>
+          <div class="selecionarCompraTextAdicionarContainer">
+            <div class="selecionarCompraTextQuantidade">
+              <div class="selecionarQuantidadeMenos">-</div>
+              <div class="selecionarQuantidade">1</div>
+              <div class="selecionarQuantidadeMais">+</div>
+            </div>
+            <div class="selecionarCompraTextAdicionar"></div>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="carrinhoCompras">
+      <div class="carrinhoComprasContainer">
+        <div class="carrinhoCloseBtn">x</div>
+        <div class="carrinhoComprasTitulo"><h3>Sacola</h3></div>
+        <div class="carrinhoComprasContent">
+          <div class="carrinhoComprasInfo">
+            <div class="carrinhoComprasLogo"></div>
+            <div class="carrinhoComprasNome"></div>
+          </div>
+          <div class="carrinhoComprasBox">
+            <div class="carrinhoComprasSingle"></div>
+          </div>
+          <div class="carrinhoComprasAvancar"><h3>Proximo</h3></div>
+      </div>
+    </section>
+
+    <div class="sacoladeCompras"><img src="../Images/carrinho-de-compras.png" alt=""></div>
+
+    <footer class="catalogoFooter">
+      <div class="direitos">
+        <div class="direitosImg">
+          <img src="../Images/logo.png" alt="">
+        </div>
+        <div class="direitosInfo">
+          <p>© Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online S.A.</p>
+          <p>CNPJ 00.000.000/0008-00 / Avenida General Severino Filho - CEP 154785-874</p>
+        </div>
+        <div class="direitosTermos">
+          <p>Termos e condições de uso</p>
+          <p>Código de conduta</p>
+          <p>Privacidade</p>
+          <p>Dicas de segurança</p>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+
+  </body>
+  <script src="../Js/catalogo.js"></script>
+</html>
